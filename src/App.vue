@@ -1,18 +1,28 @@
 <template>
   <div id="app">
+    <slide>
+      <ul>
+        <li>123</li>
+        <li>234</li>
+      </ul>
+    </slide>
     <transition name="vux-pop-in">
       <router-view></router-view>
     </transition>
-    <loading></loading>
+    <!-- <loading></loading> -->
   </div>
 </template>
 
 <script>
-import loading from '@/components/common/loading'
+import slide from '@/components/common/slide'
 export default {
   name: 'app',
   components: {
-    loading
+    // loading
+    slide
+  },
+  mounted () {
+    // slide.show = true
   }
 }
 </script>
