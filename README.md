@@ -1,10 +1,10 @@
-# oces-app
+# eStudy
 
 > A Vue.js & cordova project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
