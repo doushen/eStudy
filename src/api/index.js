@@ -1,9 +1,9 @@
 /**
- * axios 默认参数配置
+ * axios 封装
  */
 import axios from 'axios'
 import {
-  baseURL
+  baseUrl
 } from '@/config/env'
 // import loading from '@/components/common/loading'
 // import store from '@/store'
@@ -14,7 +14,7 @@ const CancelToken = axios.CancelToken
 const source = CancelToken.source()
 // console.log(source)
 const ajax = axios.create({
-  baseURL: baseURL,
+  baseURL: baseUrl,
   timeout: 5000,
   // headers: {
   //   'Authorization': AUTH_TOKEN

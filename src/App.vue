@@ -1,25 +1,26 @@
 <template>
   <div id="app">
-    <slide>
-      <ul>
-        <li>123</li>
-        <li>234</li>
-      </ul>
-    </slide>
+    <headerCtrl headerTitle="学吧"></headerCtrl>
+    <sliderBarCtrl></sliderBarCtrl>
     <transition name="vux-pop-in">
       <router-view></router-view>
     </transition>
-    <!-- <loading></loading> -->
+    <footerCtrl></footerCtrl>
   </div>
 </template>
 
 <script>
-import slide from '@/components/common/slide'
+import headerCtrl from '@/components/header/headerCtrl'
+import sliderBarCtrl from '@/components/common/sliderBarCtrl'
+import footerCtrl from '@/components/footer/footerCtrl'
+// import slide from '@/components/common/slide'
 export default {
   name: 'app',
   components: {
-    // loading
-    slide
+    headerCtrl,
+    sliderBarCtrl,
+    footerCtrl
+    // slide
   },
   mounted () {
     // slide.show = true

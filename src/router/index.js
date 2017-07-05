@@ -4,54 +4,77 @@ import {routerMode} from '../config/env'
 import store from '@/store'
 
 const login = r => require.ensure([], () => r(require('../views/login/login')), 'login')
-const oces = r => require.ensure([], () => r(require('../views/oces/Oces')), 'oces')
-const home = r => require.ensure([], () => r(require('../views/oces/home/home')), 'home')
-const courses = r => require.ensure([], () => r(require('../views/oces/courses/courses')), 'courses')
-const my = r => require.ensure([], () => r(require('../views/oces/my/my')), 'my')
+const home = r => require.ensure([], () => r(require('../views/home/home')), 'home')
+// const oces = r => require.ensure([], () => r(require('../views/oces/Oces')), 'oces')
+// const home = r => require.ensure([], () => r(require('../views/oces/home/home')), 'home')
+// const courses = r => require.ensure([], () => r(require('../views/oces/courses/courses')), 'courses')
+// const my = r => require.ensure([], () => r(require('../views/oces/my/my')), 'my')
 
 Vue.use(Router)
+
+// const router = new Router({
+//   routes: [
+//     {
+//       path: '/',
+//       redirect: '/oces/'
+//     },
+//     {
+//       path: '/index.html',
+//       redirect: '/oces/'
+//     },
+//     {
+//       path: '/login',
+//       component: login
+//     },
+//     {
+//       path: '/oces/',
+//       component: oces,
+//       children: [
+//         {
+//           path: '',
+//           redirect: 'home'
+//         },
+//         {
+//           path: 'home',
+//           name: 'home',
+//           component: home
+//         },
+//         {
+//           path: 'courses',
+//           name: 'courses',
+//           component: courses
+//         },
+//         {
+//           path: 'my',
+//           name: 'my',
+//           // meta: {
+//           //   requireAuth: true  // 添加该字段，表示进入这个路由是需要登录的
+//           // },
+//           component: my
+//         }
+//       ]
+//     }
+//   ],
+//   mode: routerMode
+// })
 
 const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/oces/'
+      redirect: '/home'
     },
     {
       path: '/index.html',
-      redirect: '/oces/'
+      redirect: '/home'
+    },
+    {
+      path: '/home',
+      component: home
     },
     {
       path: '/login',
       component: login
-    },
-    {
-      path: '/oces/',
-      component: oces,
-      children: [
-        {
-          path: '',
-          redirect: 'home'
-        },
-        {
-          path: 'home',
-          name: 'home',
-          component: home
-        },
-        {
-          path: 'courses',
-          name: 'courses',
-          component: courses
-        },
-        {
-          path: 'my',
-          name: 'my',
-          // meta: {
-          //   requireAuth: true  // 添加该字段，表示进入这个路由是需要登录的
-          // },
-          component: my
-        }
-      ]
     }
   ],
   mode: routerMode

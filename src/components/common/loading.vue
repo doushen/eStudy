@@ -17,13 +17,13 @@ import {
   mapState
 } from 'vuex'
 export default {
-  data() {
+  data () {
     return {
       positionY: 0,
       timer: null
     }
   },
-  mounted() {
+  mounted () {
     // this.timer = setInterval(() => {
     //   this.positionY ++
     // }, 600)
@@ -37,7 +37,7 @@ export default {
     // }
   },
   watch: {
-    isLoading: function() {
+    isLoading: function () {
       if (this.isLoading) {
         this.timer = setInterval(() => {
           this.positionY++
@@ -47,14 +47,14 @@ export default {
       }
     }
   },
-  beforeDestroy() {
+  beforeDestroy () {
     clearInterval(this.timer)
   }
 }
 </script>
 
 <style lang="scss">
-Error: Source sample is missing.
+Error:Source sample is missing.
 </style>
 
 

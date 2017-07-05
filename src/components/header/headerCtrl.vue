@@ -20,6 +20,9 @@
         <slot name="opentitle"></slot>
         <slot name="changecity"></slot>
         <slot name="changeLogin"></slot>
+        <section class="rightMenu">
+          <span>=</span>
+        </section>
     </header>
 </template>
 
@@ -88,5 +91,12 @@
             text-align: center;
             font-weight: bold;
         }
+    }
+    .rightMenu {
+      float: right;
+      cursor: pointer;
+      > span {
+        color:white;display:inline-block;margin:.2rem .5rem 0 0;
+      }
     }
 </style>
