@@ -98,10 +98,7 @@ export default {
   }
   .slider-bar-menu {
     max-width: 80%;
-<<<<<<< HEAD
     min-width: 30%;
-=======
->>>>>>> 5fc7fedd01ff16556ecebcdfa5cd8b64bf0b0426
     z-index: 140;
     background-color: #363c43;
     position: fixed;
