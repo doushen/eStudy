@@ -10,7 +10,7 @@ const AUTH_TOKEN = 'Basic NDBmNGI2M2I0MmE2ODgzZjo5ZjUzZWU0MDUxYTk0NDcxYTE3N2FkOD
 
 const CancelToken = axios.CancelToken
 const source = CancelToken.source()
-console.log(source)
+// console.log(source)
 const ajax = axios.create({
   baseURL: ocesUrl,
   timeout: 5000,

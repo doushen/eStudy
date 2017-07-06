@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <headerCtrl headerTitle="学吧"></headerCtrl>
-    <sliderBarCtrl></sliderBarCtrl>
+    <headerCtrl headerTitle="学吧" @triggerSliderBar="triggerSliderBar"></headerCtrl>
+    <sliderBarCtrl :isShow="showSliderBar" @hideSlider="hideSlider"></sliderBarCtrl>
     <transition name="vux-pop-in">
       <router-view></router-view>
     </transition>
@@ -22,8 +22,22 @@ export default {
     footerCtrl
     // slide
   },
+  data () {
+    return {
+      showSliderBar: false
+    }
+  },
   mounted () {
     // slide.show = true
+  },
+  methods: {
+    triggerSliderBar () {
+      console.log(this.showSliderBar)
+      this.showSliderBar = !this.showSliderBar
+    },
+    hideSlider () {
+      this.showSliderBar = false
+    }
   }
 }
 </script>

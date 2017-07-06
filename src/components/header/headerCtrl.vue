@@ -49,8 +49,8 @@
       //     'getUserInfo'
       // ]),
       triggerSliderBar () {
-        console.log('trigger')
-        // $emit('triggerMenuClick')
+        // console.log('trigger')
+        this.$emit('triggerSliderBar')
       }
     }
   }

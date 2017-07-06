@@ -55,6 +55,11 @@ export default {
       this.Data = this.$store.state.oces.courseList.Data
       // this.$store.dispatch('showLoading', false)  // 隐藏加载中动画
     })
+  },
+  methods: {
+    triggerMenuClick () {
+      alert('trigger')
+    }
   }
 }
 </script>
