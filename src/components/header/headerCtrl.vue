@@ -20,7 +20,7 @@
         <slot name="opentitle"></slot>
         <slot name="changecity"></slot>
         <slot name="changeLogin"></slot>
-        <section class="rightMenu">
+        <section class="rightMenu" @click="triggerSliderBar">
           <span>=</span>
         </section>
     </header>
@@ -48,6 +48,10 @@
       // ...mapActions([
       //     'getUserInfo'
       // ]),
+      triggerSliderBar () {
+        console.log('trigger')
+        // $emit('triggerMenuClick')
+      }
     }
   }
 </script>
