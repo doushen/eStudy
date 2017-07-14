@@ -82,10 +82,10 @@ export default {
     z-index: 139;
     opacity: 0;
     &.in {
-      -webkit-transition: -webkit-opacity .4s cubic-bezier(.25,.8,.25,1) .4s;
-      -moz-transition: -moz-opacity .4s cubic-bezier(.25,.8,.25,1) .4s;
-      -o-transition: -o-opacity .4s cubic-bezier(.25,.8,.25,1) .4s;
-      transition: opacity .4s cubic-bezier(.25,.8,.25,1) .4s;
+      -webkit-transition: -webkit-opacity .1s cubic-bezier(.25,.8,.25,1) .4s;
+      -moz-transition: -moz-opacity .1s cubic-bezier(.25,.8,.25,1) .4s;
+      -o-transition: -o-opacity .1s cubic-bezier(.25,.8,.25,1) .4s;
+      transition: opacity .1s cubic-bezier(.25,.8,.25,1) .4s;
       opacity: .2;
     }
     &.out {

@@ -82,7 +82,7 @@ const router = new Router({
 
 //  判断是否需要登录权限 以及是否登录
 router.beforeEach((to, from, next) => {
-  store.dispatch('showLoading', false) // 隐藏加载中动画
+  // store.dispatch('showLoading', false) // 隐藏加载中动画
   if (to.meta && to.meta.requireAuth) {  // 判断该路由是否需要登录权限
     // store.state.isLogin = true
     if (store.state.isLogin) {  // 通过vuex state获取当前的token是否存在

@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <headerCtrl headerTitle="学吧" @triggerSliderBar="triggerSliderBar"></headerCtrl>
+    <headerCtrl headerTitle="求学" @triggerSliderBar="triggerSliderBar"></headerCtrl>
     <sliderBarCtrl :isShow="showSliderBar" @hideSlider="hideSlider"></sliderBarCtrl>
+    <!-- <slide></slide> -->
     <transition name="vux-pop-in">
       <router-view></router-view>
     </transition>
@@ -12,6 +13,7 @@
 <script>
 import headerCtrl from '@/components/header/headerCtrl'
 import sliderBarCtrl from '@/components/common/sliderBarCtrl'
+// import slide from '@/components/common/slide'
 import footerCtrl from '@/components/footer/footerCtrl'
 // import slide from '@/components/common/slide'
 export default {
@@ -19,6 +21,7 @@ export default {
   components: {
     headerCtrl,
     sliderBarCtrl,
+    // slide,
     footerCtrl
     // slide
   },

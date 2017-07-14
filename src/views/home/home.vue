@@ -50,11 +50,11 @@ export default {
     }
   },
   mounted () {
-    // this.$store.dispatch('showLoading', true) // 显示加载中动画
-    this.$store.dispatch('getCourseList').then(() => {
-      this.Data = this.$store.state.oces.courseList.Data
-      // this.$store.dispatch('showLoading', false)  // 隐藏加载中动画
-    })
+    // // this.$store.dispatch('showLoading', true) // 显示加载中动画
+    // this.$store.dispatch('getCourseList').then(() => {
+    //   this.Data = this.$store.state.oces.courseList.Data
+    //   // this.$store.dispatch('showLoading', false)  // 隐藏加载中动画
+    // })
   },
   methods: {
     triggerMenuClick () {
