@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-    <headerCtrl headerTitle="求学" @triggerSliderBar="triggerSliderBar"></headerCtrl>
-    <sliderBarCtrl :isShow="showSliderBar" @hideSlider="hideSlider"></sliderBarCtrl>
-    <!-- <slide></slide> -->
-    <transition name="vux-pop-in">
-      <router-view></router-view>
-    </transition>
-    <footerCtrl></footerCtrl>
+    <sliderBarCtrl></sliderBarCtrl>
+    <div id="content" class="app-content white bg box-shadow-z2" role="main">
+      <headerCtrl></headerCtrl>
+      <transition name="vux-pop-in">
+        <router-view></router-view>
+      </transition>
+      <footerCtrl></footerCtrl>
+    </div>
   </div>
 </template>
 
@@ -34,13 +35,13 @@ export default {
     // slide.show = true
   },
   methods: {
-    triggerSliderBar () {
-      console.log(this.showSliderBar)
-      this.showSliderBar = !this.showSliderBar
-    },
-    hideSlider () {
-      this.showSliderBar = false
-    }
+    // triggerSliderBar () {
+    //   console.log(this.showSliderBar)
+    //   this.showSliderBar = !this.showSliderBar
+    // },
+    // hideSlider () {
+    //   this.showSliderBar = false
+    // }
   }
 }
 </script>

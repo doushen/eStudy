@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <bannerCtrl></bannerCtrl>
+    <!-- <bannerCtrl></bannerCtrl> -->
     <div class="my_course" style="padding:0">
         <p class="title">我的课程</p>
         <ul class="course_list">
@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import bannerCtrl from '@/components/common/bannerCtrl'
+// import bannerCtrl from '@/components/common/bannerCtrl'
 // import footerCtrl from '@/components/footer/footerCtrl'
 // import homeData from '@/api/oces/home'
 // import loading from '@/components/common/loading'
@@ -42,7 +42,7 @@ export default {
   components: {
     // footerCtrl,
     // loading,
-    bannerCtrl
+    // bannerCtrl
   },
   data () {
     return {
@@ -57,9 +57,9 @@ export default {
     // })
   },
   methods: {
-    triggerMenuClick () {
-      alert('trigger')
-    }
+    // triggerMenuClick () {
+    //   alert('trigger')
+    // }
   }
 }
 </script>

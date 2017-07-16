@@ -7,6 +7,11 @@ import router from './router'
 import './config/rem'
 import VueCordova from 'vue-cordova'
 import './filter'
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue)
+
+import 'animate.css/animate.min.css'
+import 'glyphicons'
 import 'font-awesome/css/font-awesome.css'
 import FastClick from 'fastclick'
 
